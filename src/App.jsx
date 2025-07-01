@@ -1,10 +1,15 @@
 import React from 'react'
+import { BrowserRouter, Route,Routes } from 'react-router-dom'
+import HomePages from './Pages/HomePages'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='bg-yellow-50'>hellow world</h1>
-    </div>
+   
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<HomePages/>}/>
+   </Routes>
+   </BrowserRouter>
   )
 }
 
